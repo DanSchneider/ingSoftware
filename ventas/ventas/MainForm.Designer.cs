@@ -21,7 +21,6 @@ namespace ventas
 		private System.Windows.Forms.Label lblPASSWORD;
 		private System.Windows.Forms.Button btnCancelar;
 		private System.Windows.Forms.Button btnAceptar;
-		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label1;
 		
 		/// <summary>
@@ -53,21 +52,21 @@ namespace ventas
 			this.lblPASSWORD = new System.Windows.Forms.Label();
 			this.btnCancelar = new System.Windows.Forms.Button();
 			this.btnAceptar = new System.Windows.Forms.Button();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.BackColor = System.Drawing.Color.Transparent;
 			this.groupBox1.Controls.Add(this.txtUsuario);
 			this.groupBox1.Controls.Add(this.lblUSER_NAME);
 			this.groupBox1.Controls.Add(this.txtContraseña);
 			this.groupBox1.Controls.Add(this.lblPASSWORD);
 			this.groupBox1.Controls.Add(this.btnCancelar);
 			this.groupBox1.Controls.Add(this.btnAceptar);
-			this.groupBox1.Location = new System.Drawing.Point(175, 36);
+			this.groupBox1.ForeColor = System.Drawing.Color.Black;
+			this.groupBox1.Location = new System.Drawing.Point(69, 29);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(365, 234);
 			this.groupBox1.TabIndex = 0;
@@ -84,6 +83,7 @@ namespace ventas
 			// 
 			this.lblUSER_NAME.AutoSize = true;
 			this.lblUSER_NAME.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+			this.lblUSER_NAME.ForeColor = System.Drawing.Color.Black;
 			this.lblUSER_NAME.Location = new System.Drawing.Point(46, 44);
 			this.lblUSER_NAME.Name = "lblUSER_NAME";
 			this.lblUSER_NAME.Size = new System.Drawing.Size(54, 16);
@@ -102,6 +102,7 @@ namespace ventas
 			// 
 			this.lblPASSWORD.AutoSize = true;
 			this.lblPASSWORD.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+			this.lblPASSWORD.ForeColor = System.Drawing.Color.Black;
 			this.lblPASSWORD.Location = new System.Drawing.Point(19, 80);
 			this.lblPASSWORD.Name = "lblPASSWORD";
 			this.lblPASSWORD.Size = new System.Drawing.Size(78, 16);
@@ -138,21 +139,11 @@ namespace ventas
 			this.btnAceptar.Text = "&Acceder";
 			this.btnAceptar.UseVisualStyleBackColor = false;
 			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(12, 80);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 10;
-			this.pictureBox1.TabStop = false;
-			// 
 			// label1
 			// 
+			this.label1.BackColor = System.Drawing.Color.Transparent;
 			this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-			this.label1.Location = new System.Drawing.Point(175, 15);
+			this.label1.Location = new System.Drawing.Point(105, 18);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(329, 18);
 			this.label1.TabIndex = 11;
@@ -162,15 +153,15 @@ namespace ventas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(552, 304);
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(528, 318);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "MainForm";
 			this.Text = "Inicio de sesión";
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 
 		}
