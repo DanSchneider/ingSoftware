@@ -1,0 +1,8 @@
+C:\Users\Luis\Documents\SharpDevelop Projects\ventas\ventas\bin\Debug\ventas.exe.config
+C:\Users\Luis\Documents\SharpDevelop Projects\ventas\ventas\bin\Debug\ventas.exe
+C:\Users\Luis\Documents\SharpDevelop Projects\ventas\ventas\bin\Debug\ventas.pdb
+C:\Users\Luis\Documents\SharpDevelop Projects\ventas\ventas\obj\Debug\ventas.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Documents\SharpDevelop Projects\ventas\ventas\obj\Debug\ventas.MainForm.resources
+C:\Users\Luis\Documents\SharpDevelop Projects\ventas\ventas\obj\Debug\ventas.csproj.GenerateResource.Cache
+C:\Users\Luis\Documents\SharpDevelop Projects\ventas\ventas\obj\Debug\ventas.exe
+C:\Users\Luis\Documents\SharpDevelop Projects\ventas\ventas\obj\Debug\ventas.pdb
