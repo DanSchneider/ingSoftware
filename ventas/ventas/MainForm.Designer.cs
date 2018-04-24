@@ -138,6 +138,7 @@ namespace ventas
 			this.btnAceptar.TabIndex = 2;
 			this.btnAceptar.Text = "&Acceder";
 			this.btnAceptar.UseVisualStyleBackColor = false;
+			this.btnAceptar.Click += new System.EventHandler(this.BtnAceptarClick);
 			// 
 			// label1
 			// 
@@ -147,7 +148,7 @@ namespace ventas
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(329, 18);
 			this.label1.TabIndex = 11;
-			this.label1.Text = "Ingrese usuario y contraseña para acceder al sistema";
+			this.label1.Text = "Ingrese su usuario y contraseña para acceder al sistema";
 			// 
 			// MainForm
 			// 
@@ -155,7 +156,7 @@ namespace ventas
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.ClientSize = new System.Drawing.Size(528, 318);
+			this.ClientSize = new System.Drawing.Size(509, 305);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "MainForm";

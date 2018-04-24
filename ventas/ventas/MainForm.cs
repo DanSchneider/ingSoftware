@@ -29,6 +29,13 @@ namespace ventas
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void BtnAceptarClick(object sender, EventArgs e)
+		{
+			//accción tempotal para probar conexion
+			conexion.ObtenerConexion();
+			MessageBox.Show("conectado!");
+			
+		}
 		
 	}
 }
