@@ -6,7 +6,7 @@ using MySql.Data.MySqlClient;
 namespace ventas
 {
 
-	public class conexion
+	public static class conexion
 	{
 		 public static MySqlConnection ObtenerConexion()
        {
