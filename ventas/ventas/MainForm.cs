@@ -26,15 +26,16 @@ namespace ventas
 			
 			codigo.Connection = conexion.ObtenerConexion();
 			
-			codigo.CommandText = ("select * from usuarios where NICKNAME = '"+txtUsuario.Text+"' and PASSWORD = '"+txtContraseña.Text+"' ");
+			codigo.CommandText = ("select * from usuarios where NICKNAME = '"+
+			                      txtUsuario.Text+"' and PASSWORD = '"+txtContraseña.Text+"' ");
 			
 			MySqlDataReader leer = codigo.ExecuteReader();
 			
 			if(leer.Read()){
 				MessageBox.Show("Bienvenido al sistema "+txtUsuario.Text+"!");
 				Menu m =  new Menu();
-				m.Show();
 				this.Hide();
+				m.Show();
 				
 			}
 			else{
