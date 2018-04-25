@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace ventas
 {
@@ -17,8 +18,29 @@ namespace ventas
 		void BtnAceptarClick(object sender, EventArgs e)
 		{
 			//accción tempotal para probar conexion
-			conexion.ObtenerConexion();
-			MessageBox.Show("conectado!");
+			//conexion.ObtenerConexion();
+			
+			MySqlCommand codigo = new MySqlCommand();
+			
+			MySqlConnection cn = new MySqlConnection();
+			
+			codigo.Connection = conexion.ObtenerConexion();
+			
+			codigo.CommandText = ("select * from usuarios where NICKNAME = '"+txtUsuario.Text+"' and PASSWORD = '"+txtContraseña.Text+"' ");
+			
+			MySqlDataReader leer = codigo.ExecuteReader();
+			
+			if(leer.Read()){
+				MessageBox.Show("Bienvenido al sistema "+txtUsuario.Text+"!");
+				Menu m =  new Menu();
+				m.Show();
+				this.Hide();
+				
+			}
+			else{
+				MessageBox.Show("Usuario o contraseña incorrectos!");
+			}
+			
 			
 		}
 		
