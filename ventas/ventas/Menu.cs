@@ -14,5 +14,14 @@ namespace ventas
 			
 
 		}
+		void Button1Click(object sender, EventArgs e)
+		{
+			MainForm m = new MainForm();
+			m.Show();
+			
+			
+			this.Dispose();
+			
+		}
 	}
 }

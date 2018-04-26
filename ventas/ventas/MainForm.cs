@@ -34,8 +34,8 @@ namespace ventas
 			if(leer.Read()){
 				MessageBox.Show("Bienvenido al sistema "+txtUsuario.Text+"!");
 				Menu m =  new Menu();
-				this.Hide();
 				m.Show();
+				this.Hide();
 				
 			}
 			else{
@@ -43,6 +43,11 @@ namespace ventas
 			}
 			
 			
+		}
+		void BtnCancelarClick(object sender, EventArgs e)
+		{
+			//this.Dispose();
+			Application.ExitThread();
 		}
 		
 	}
