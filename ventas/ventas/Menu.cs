@@ -11,6 +11,7 @@ namespace ventas
 		{
 
 			InitializeComponent();
+			
 
 		}
 	}
