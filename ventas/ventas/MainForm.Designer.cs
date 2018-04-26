@@ -123,6 +123,7 @@ namespace ventas
 			this.btnCancelar.TabIndex = 3;
 			this.btnCancelar.Text = "&Salir";
 			this.btnCancelar.UseVisualStyleBackColor = false;
+			this.btnCancelar.Click += new System.EventHandler(this.BtnCancelarClick);
 			// 
 			// btnAceptar
 			// 
@@ -159,6 +160,8 @@ namespace ventas
 			this.ClientSize = new System.Drawing.Size(509, 305);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.groupBox1);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.MaximizeBox = false;
 			this.Name = "MainForm";
 			this.Text = "Inicio de sesión";
 			this.groupBox1.ResumeLayout(false);
