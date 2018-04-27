@@ -23,5 +23,12 @@ namespace ventas
 			this.Dispose();
 			
 		}
+		void BtnUsuariosClick(object sender, EventArgs e)
+		{
+			AgregarUsuarios au = new AgregarUsuarios();
+			au.Show();
+			this.Hide();
+			
+		}
 	}
 }

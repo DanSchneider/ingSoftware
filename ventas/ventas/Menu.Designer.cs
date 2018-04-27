@@ -105,6 +105,7 @@ namespace ventas
 			this.btnUsuarios.Text = "Usuarios";
 			this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnUsuarios.UseVisualStyleBackColor = false;
+			this.btnUsuarios.Click += new System.EventHandler(this.BtnUsuariosClick);
 			// 
 			// button1
 			// 
@@ -130,7 +131,7 @@ namespace ventas
 			this.Controls.Add(this.btnProductos);
 			this.Controls.Add(this.btnVneta);
 			this.Name = "Menu";
-			this.Text = "Menu";
+			this.Text = "Menu Administrador";
 			this.ResumeLayout(false);
 
 		}

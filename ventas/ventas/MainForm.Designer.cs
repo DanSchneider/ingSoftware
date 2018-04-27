@@ -147,9 +147,9 @@ namespace ventas
 			this.label1.BackColor = System.Drawing.Color.Transparent;
 			this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.Transparent;
-			this.label1.Location = new System.Drawing.Point(136, 29);
+			this.label1.Location = new System.Drawing.Point(138, 29);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(442, 18);
+			this.label1.Size = new System.Drawing.Size(422, 18);
 			this.label1.TabIndex = 11;
 			this.label1.Text = "Ingrese su usuario y contraseña para acceder al sistema";
 			// 
