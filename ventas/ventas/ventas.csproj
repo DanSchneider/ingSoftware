@@ -60,6 +60,10 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuUsuario.cs" />
+    <Compile Include="MenuUsuario.Designer.cs">
+      <DependentUpon>MenuUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

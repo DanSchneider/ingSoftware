@@ -11,6 +11,7 @@ namespace ventas
 		{
 
 			InitializeComponent();
+			
 
 		}
 		void Button1Click(object sender, EventArgs e)

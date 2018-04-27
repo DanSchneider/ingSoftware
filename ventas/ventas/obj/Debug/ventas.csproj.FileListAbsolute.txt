@@ -15,3 +15,4 @@ C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.csproj.Generate
 C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.exe
 C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.pdb
 C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.Menu.resources
+C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.MenuAdmin.resources
