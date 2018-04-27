@@ -94,7 +94,7 @@ namespace ventas
 			// 
 			// btnUsuarios
 			// 
-			this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.btnUsuarios.BackColor = System.Drawing.Color.White;
 			this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
 			this.btnUsuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuarios.Image")));
@@ -102,7 +102,7 @@ namespace ventas
 			this.btnUsuarios.Name = "btnUsuarios";
 			this.btnUsuarios.Size = new System.Drawing.Size(143, 163);
 			this.btnUsuarios.TabIndex = 7;
-			this.btnUsuarios.Text = "Usuario";
+			this.btnUsuarios.Text = "Usuarios";
 			this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnUsuarios.UseVisualStyleBackColor = false;
 			// 
