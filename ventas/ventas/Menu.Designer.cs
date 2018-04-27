@@ -18,6 +18,7 @@ namespace ventas
 		private System.Windows.Forms.Button btnProductos;
 		private System.Windows.Forms.Button btnBuscar;
 		private System.Windows.Forms.Button btnUsuarios;
+		private System.Windows.Forms.Button button1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -45,6 +46,7 @@ namespace ventas
 			this.btnProductos = new System.Windows.Forms.Button();
 			this.btnBuscar = new System.Windows.Forms.Button();
 			this.btnUsuarios = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// btnVneta
@@ -104,12 +106,25 @@ namespace ventas
 			this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnUsuarios.UseVisualStyleBackColor = false;
 			// 
+			// button1
+			// 
+			this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.button1.Location = new System.Drawing.Point(226, 325);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(146, 54);
+			this.button1.TabIndex = 8;
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
+			// 
 			// Menu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.Silver;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.ClientSize = new System.Drawing.Size(615, 330);
+			this.ClientSize = new System.Drawing.Size(600, 391);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.btnUsuarios);
 			this.Controls.Add(this.btnBuscar);
 			this.Controls.Add(this.btnProductos);
