@@ -4,7 +4,7 @@ using MySql.Data.MySqlClient;
 namespace ventas
 {
 
-	public class UsuariosSql
+	public static class UsuariosSql
 	{
 		public static int Agregar(Usuarios pUsuarios)
 		{
