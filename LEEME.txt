@@ -1,0 +1,3 @@
+Para que el proyecto funcione de manera correcta, hay que instalar el conector
+en el sistema operativo como si fuera cualquier otro programa, para que así, el
+proyecto detecte las referencias hechas.
