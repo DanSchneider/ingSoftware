@@ -70,6 +70,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="puntoDeVenta.cs" />
+    <Compile Include="puntoDeVenta.Designer.cs">
+      <DependentUpon>puntoDeVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usuarios.cs" />
     <Compile Include="UsuariosSql.cs" />
   </ItemGroup>
@@ -88,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuUsuario.resx">
       <DependentUpon>MenuUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="puntoDeVenta.resx">
+      <DependentUpon>puntoDeVenta.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
