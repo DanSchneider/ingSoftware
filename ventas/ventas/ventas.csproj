@@ -56,6 +56,10 @@
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="conexion.cs" />
+    <Compile Include="BuscarAdmi.cs" />
+    <Compile Include="BuscarAdmi.Designer.cs">
+      <DependentUpon>BuscarAdmi.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -76,6 +80,14 @@
     </Compile>
     <Compile Include="Usuarios.cs" />
     <Compile Include="UsuariosSql.cs" />
+    <Compile Include="VentanaBuscar.cs" />
+    <Compile Include="VentanaBuscar.Designer.cs">
+      <DependentUpon>VentanaBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventasAdmi.cs" />
+    <Compile Include="ventasAdmi.Designer.cs">
+      <DependentUpon>ventasAdmi.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -83,6 +95,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AgregarUsuarios.resx">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarAdmi.resx">
+      <DependentUpon>BuscarAdmi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -95,6 +110,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="puntoDeVenta.resx">
       <DependentUpon>puntoDeVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaBuscar.resx">
+      <DependentUpon>VentanaBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventasAdmi.resx">
+      <DependentUpon>ventasAdmi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

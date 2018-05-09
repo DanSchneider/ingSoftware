@@ -27,6 +27,8 @@ namespace ventas
 		private System.Windows.Forms.TextBox txtAgregaNombre;
 		private System.Windows.Forms.Button btnGuardar;
 		private System.Windows.Forms.Button btnNuevo;
+		private System.Windows.Forms.CheckBox checkBox2;
+		private System.Windows.Forms.CheckBox checkBox1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -55,13 +57,15 @@ namespace ventas
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.txtAgregaNombre = new System.Windows.Forms.TextBox();
-			this.txtAgregaAM = new System.Windows.Forms.TextBox();
-			this.txtAgregaPass = new System.Windows.Forms.TextBox();
-			this.txtAgregaNick = new System.Windows.Forms.TextBox();
 			this.txtAgregaAP = new System.Windows.Forms.TextBox();
+			this.txtAgregaNick = new System.Windows.Forms.TextBox();
+			this.txtAgregaPass = new System.Windows.Forms.TextBox();
+			this.txtAgregaAM = new System.Windows.Forms.TextBox();
+			this.txtAgregaNombre = new System.Windows.Forms.TextBox();
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.btnNuevo = new System.Windows.Forms.Button();
+			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.checkBox2 = new System.Windows.Forms.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -107,6 +111,8 @@ namespace ventas
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.checkBox2);
+			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Controls.Add(this.txtAgregaAP);
 			this.groupBox1.Controls.Add(this.txtAgregaNick);
 			this.groupBox1.Controls.Add(this.txtAgregaPass);
@@ -124,26 +130,12 @@ namespace ventas
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "groupBox1";
 			// 
-			// txtAgregaNombre
+			// txtAgregaAP
 			// 
-			this.txtAgregaNombre.Location = new System.Drawing.Point(232, 43);
-			this.txtAgregaNombre.Name = "txtAgregaNombre";
-			this.txtAgregaNombre.Size = new System.Drawing.Size(373, 26);
-			this.txtAgregaNombre.TabIndex = 5;
-			// 
-			// txtAgregaAM
-			// 
-			this.txtAgregaAM.Location = new System.Drawing.Point(232, 137);
-			this.txtAgregaAM.Name = "txtAgregaAM";
-			this.txtAgregaAM.Size = new System.Drawing.Size(373, 26);
-			this.txtAgregaAM.TabIndex = 6;
-			// 
-			// txtAgregaPass
-			// 
-			this.txtAgregaPass.Location = new System.Drawing.Point(232, 233);
-			this.txtAgregaPass.Name = "txtAgregaPass";
-			this.txtAgregaPass.Size = new System.Drawing.Size(373, 26);
-			this.txtAgregaPass.TabIndex = 7;
+			this.txtAgregaAP.Location = new System.Drawing.Point(232, 93);
+			this.txtAgregaAP.Name = "txtAgregaAP";
+			this.txtAgregaAP.Size = new System.Drawing.Size(373, 26);
+			this.txtAgregaAP.TabIndex = 9;
 			// 
 			// txtAgregaNick
 			// 
@@ -152,12 +144,26 @@ namespace ventas
 			this.txtAgregaNick.Size = new System.Drawing.Size(373, 26);
 			this.txtAgregaNick.TabIndex = 8;
 			// 
-			// txtAgregaAP
+			// txtAgregaPass
 			// 
-			this.txtAgregaAP.Location = new System.Drawing.Point(232, 93);
-			this.txtAgregaAP.Name = "txtAgregaAP";
-			this.txtAgregaAP.Size = new System.Drawing.Size(373, 26);
-			this.txtAgregaAP.TabIndex = 9;
+			this.txtAgregaPass.Location = new System.Drawing.Point(232, 233);
+			this.txtAgregaPass.Name = "txtAgregaPass";
+			this.txtAgregaPass.Size = new System.Drawing.Size(373, 26);
+			this.txtAgregaPass.TabIndex = 7;
+			// 
+			// txtAgregaAM
+			// 
+			this.txtAgregaAM.Location = new System.Drawing.Point(232, 137);
+			this.txtAgregaAM.Name = "txtAgregaAM";
+			this.txtAgregaAM.Size = new System.Drawing.Size(373, 26);
+			this.txtAgregaAM.TabIndex = 6;
+			// 
+			// txtAgregaNombre
+			// 
+			this.txtAgregaNombre.Location = new System.Drawing.Point(232, 43);
+			this.txtAgregaNombre.Name = "txtAgregaNombre";
+			this.txtAgregaNombre.Size = new System.Drawing.Size(373, 26);
+			this.txtAgregaNombre.TabIndex = 5;
 			// 
 			// btnGuardar
 			// 
@@ -180,6 +186,24 @@ namespace ventas
 			this.btnNuevo.Text = "Nuevo";
 			this.btnNuevo.UseVisualStyleBackColor = true;
 			// 
+			// checkBox1
+			// 
+			this.checkBox1.Location = new System.Drawing.Point(232, 286);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(135, 24);
+			this.checkBox1.TabIndex = 10;
+			this.checkBox1.Text = "Administrador";
+			this.checkBox1.UseVisualStyleBackColor = true;
+			// 
+			// checkBox2
+			// 
+			this.checkBox2.Location = new System.Drawing.Point(416, 286);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(104, 24);
+			this.checkBox2.TabIndex = 11;
+			this.checkBox2.Text = "Usuario";
+			this.checkBox2.UseVisualStyleBackColor = true;
+			// 
 			// AgregarUsuarios
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -191,7 +215,7 @@ namespace ventas
 			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.ForeColor = System.Drawing.Color.White;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "AgregarUsuarios";
 			this.Text = "AgregarUsuarios";
 			this.groupBox1.ResumeLayout(false);
