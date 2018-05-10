@@ -1,8 +1,8 @@
 ﻿/*
  * Creado por SharpDevelop.
- * Usuario: jldg0
- * Fecha: 09/05/2018
- * Hora: 11:48 a. m.
+ * Usuario: JL
+ * Fecha: 10/05/2018
+ * Hora: 01:06 a.m.
  * 
  * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
  */
@@ -13,11 +13,11 @@ using System.Windows.Forms;
 namespace ventas
 {
 	/// <summary>
-	/// Description of Form1.
+	/// Description of UsuariosAdmi.
 	/// </summary>
-	public partial class BuscarAdmi : Form
+	public partial class UsuariosAdmi : Form
 	{
-		public BuscarAdmi()
+		public UsuariosAdmi()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.

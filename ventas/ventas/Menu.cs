@@ -25,10 +25,29 @@ namespace ventas
 		}
 		void BtnUsuariosClick(object sender, EventArgs e)
 		{
-			AgregarUsuarios au = new AgregarUsuarios();
+			UsuariosAdmi au = new UsuariosAdmi();
 			au.Show();
 			this.Hide();
 			
+		}
+		void BtnVnetaClick(object sender, EventArgs e)
+		{
+			ventasAdmi venta =new ventasAdmi();
+			venta.Show();
+			this.Hide();
+	
+		}
+		void BtnBuscarClick(object sender, EventArgs e)
+		{
+			BuscarAdmi busca = new BuscarAdmi();
+			busca.Show();
+			this.Hide();
+		}
+		void BtnProductosClick(object sender, EventArgs e)
+		{
+			productosAdmi produc = new productosAdmi();
+			produc.Show();
+			this.Hide();
 		}
 	}
 }

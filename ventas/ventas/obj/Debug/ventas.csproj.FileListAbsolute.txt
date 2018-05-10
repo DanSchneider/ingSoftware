@@ -35,7 +35,6 @@ C:\Users\JL\Desktop\ingSoftware\ventas\ventas\bin\Debug\ventas.exe
 C:\Users\JL\Desktop\ingSoftware\ventas\ventas\bin\Debug\ventas.pdb
 C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.csprojResolveAssemblyReference.cache
 C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.AgregarUsuarios.resources
-C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.Buscar.resources
 C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.MainForm.resources
 C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.Menu.resources
 C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.MenuUsuario.resources
@@ -45,3 +44,5 @@ C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.ventasAdmi.resour
 C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.csproj.GenerateResource.Cache
 C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.exe
 C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.pdb
+C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.BuscarAdmi.resources
+C:\Users\JL\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.productosAdmi.resources

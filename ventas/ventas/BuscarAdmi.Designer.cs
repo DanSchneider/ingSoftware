@@ -8,7 +8,7 @@
  */
 namespace ventas
 {
-	partial class Buscar
+	partial class BuscarAdmi
 	{
 		/// <summary>
 		/// Designer variable used to keep track of non-visual components.
@@ -96,7 +96,7 @@ namespace ventas
 			this.button1.Text = "Buscar";
 			this.button1.UseVisualStyleBackColor = true;
 			// 
-			// Buscar
+			// BuscarAdmi
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -107,7 +107,7 @@ namespace ventas
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
-			this.Name = "Buscar";
+			this.Name = "BuscarAdmi";
 			this.Text = "Buscar";
 			this.ResumeLayout(false);
 			this.PerformLayout();

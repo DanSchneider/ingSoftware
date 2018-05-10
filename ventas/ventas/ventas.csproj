@@ -72,6 +72,10 @@
     <Compile Include="MenuUsuario.Designer.cs">
       <DependentUpon>MenuUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="productosAdmi.cs" />
+    <Compile Include="productosAdmi.Designer.cs">
+      <DependentUpon>productosAdmi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="puntoDeVenta.cs" />
@@ -79,6 +83,10 @@
       <DependentUpon>puntoDeVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuarios.cs" />
+    <Compile Include="UsuariosAdmi.cs" />
+    <Compile Include="UsuariosAdmi.Designer.cs">
+      <DependentUpon>UsuariosAdmi.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsuariosSql.cs" />
     <Compile Include="VentanaBuscar.cs" />
     <Compile Include="VentanaBuscar.Designer.cs">
@@ -107,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuUsuario.resx">
       <DependentUpon>MenuUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productosAdmi.resx">
+      <DependentUpon>productosAdmi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="puntoDeVenta.resx">
       <DependentUpon>puntoDeVenta.cs</DependentUpon>
