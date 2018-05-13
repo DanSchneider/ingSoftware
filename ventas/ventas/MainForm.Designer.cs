@@ -162,6 +162,7 @@ namespace ventas
 			this.ClientSize = new System.Drawing.Size(663, 422);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.groupBox1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "MainForm";
