@@ -28,5 +28,12 @@ namespace ventas
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void ButtonBackPVtoMenuPClick(object sender, EventArgs e)
+		{
+			MenuUsuario menu = new MenuUsuario();
+			menu.Show();
+			this.Hide();
+	
+		}
 	}
 }

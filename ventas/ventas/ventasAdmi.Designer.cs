@@ -98,6 +98,7 @@ namespace ventas
 			this.buttonIrMenu.TabIndex = 5;
 			this.buttonIrMenu.Text = "Ir a Menú";
 			this.buttonIrMenu.UseVisualStyleBackColor = true;
+			this.buttonIrMenu.Click += new System.EventHandler(this.ButtonIrMenuClick);
 			// 
 			// ventasAdmi
 			// 

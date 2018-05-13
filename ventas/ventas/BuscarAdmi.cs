@@ -19,14 +19,15 @@ namespace ventas
 	{
 		public BuscarAdmi()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
 			InitializeComponent();
+		}
+		void ButtonRegresarClick(object sender, EventArgs e)
+		{
+			MenuAdmi back2 = new MenuAdmi();
+			back2.Show();
+			this.Hide();
 			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
+			
 		}
 	}
 }

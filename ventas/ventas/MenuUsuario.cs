@@ -21,5 +21,19 @@ namespace ventas
 			
 			this.Dispose();
 		}
+		void BtnVnetaClick(object sender, EventArgs e)
+		{
+			puntoDeVenta venta = new puntoDeVenta();
+			venta.Show();
+			this.Hide();
+	
+		}
+		void BtnBuscarClick(object sender, EventArgs e)
+		{
+			buscarUsuario busca = new buscarUsuario();
+			busca.Show();
+			this.Hide();
+			
+		}
 	}
 }

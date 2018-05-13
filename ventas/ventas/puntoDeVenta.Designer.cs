@@ -163,7 +163,7 @@ namespace ventas
 			// 
 			this.buttonBuscaProducto.Location = new System.Drawing.Point(721, 35);
 			this.buttonBuscaProducto.Name = "buttonBuscaProducto";
-			this.buttonBuscaProducto.Size = new System.Drawing.Size(75, 36);
+			this.buttonBuscaProducto.Size = new System.Drawing.Size(75, 35);
 			this.buttonBuscaProducto.TabIndex = 11;
 			this.buttonBuscaProducto.Text = "Buscar producto";
 			this.buttonBuscaProducto.UseVisualStyleBackColor = true;
@@ -203,6 +203,7 @@ namespace ventas
 			this.buttonBackPVtoMenuP.TabIndex = 15;
 			this.buttonBackPVtoMenuP.Text = "Ir a Menú Usuario";
 			this.buttonBackPVtoMenuP.UseVisualStyleBackColor = true;
+			this.buttonBackPVtoMenuP.Click += new System.EventHandler(this.ButtonBackPVtoMenuPClick);
 			// 
 			// label6
 			// 
@@ -233,7 +234,7 @@ namespace ventas
 			// 
 			// labelFechaActual
 			// 
-			this.labelFechaActual.Location = new System.Drawing.Point(635, -2);
+			this.labelFechaActual.Location = new System.Drawing.Point(635, 0);
 			this.labelFechaActual.Name = "labelFechaActual";
 			this.labelFechaActual.Size = new System.Drawing.Size(179, 23);
 			this.labelFechaActual.TabIndex = 18;

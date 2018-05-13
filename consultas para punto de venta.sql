@@ -1,3 +1,5 @@
+drop database p_venta1;
+
 CREATE DATABASE p_venta1;
 USE p_venta1;
 
@@ -9,7 +11,17 @@ CREATE TABLE usuarios
     APELLIDO_P VARCHAR(20),
     APELLIDO_M VARCHAR(20),
     NICKNAME VARCHAR(20),
-    PASSWORD INT
+    PASSWORD VARCHAR(20)
+);
+
+CREATE TABLE `admins` (
+  `ID_ADMIN` int(11) NOT NULL AUTO_INCREMENT,
+  `NOMBRE` text DEFAULT NULL,
+  `APELLIDO_P` varchar(20) DEFAULT NULL,
+  `APELLIDO_M` varchar(20) DEFAULT NULL,
+  `NICKNAME` varchar(20) DEFAULT NULL,
+  `PASS` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`ID_ADMIN`)
 );
 
 
@@ -55,14 +67,7 @@ CREATE TABLE ventas
 
 
 
-select * from usuarios;
-show create table usuarios;
-insert into usuarios values (1,'Luis Gerardo','Roman','Marin','luis5648',12345);
 
-update usuarios 
-set PASSWORD = '12345'
-where NOMBRE = 'Luis Gerardo';
+insert into usuarios values (1,'Luis Gerardo','Roman','Marin','luis5648','12345');
 
-
-alter table usuarios change PASSWORD PASSWORD varchar(25);
-
+insert into admins values (1,'Jose Luis','Del Toro','Gomez','admin','Administrad0r')

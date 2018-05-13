@@ -8,7 +8,7 @@
  */
 namespace ventas
 {
-	partial class Menu
+	partial class MenuAdmi
 	{
 		/// <summary>
 		/// Designer variable used to keep track of non-visual components.
@@ -41,7 +41,7 @@ namespace ventas
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdmi));
 			this.btnVneta = new System.Windows.Forms.Button();
 			this.btnProductos = new System.Windows.Forms.Button();
 			this.btnBuscar = new System.Windows.Forms.Button();
@@ -121,7 +121,7 @@ namespace ventas
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
-			// Menu
+			// MenuAdmi
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,7 +133,7 @@ namespace ventas
 			this.Controls.Add(this.btnBuscar);
 			this.Controls.Add(this.btnProductos);
 			this.Controls.Add(this.btnVneta);
-			this.Name = "Menu";
+			this.Name = "MenuAdmi";
 			this.Text = "Menu Administrador";
 			this.ResumeLayout(false);
 

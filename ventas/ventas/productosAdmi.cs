@@ -19,14 +19,16 @@ namespace ventas
 	{
 		public productosAdmi()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
+		
 			InitializeComponent();
 			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
+			
+		}
+		void Button3Click(object sender, EventArgs e)
+		{//ButtonBackMenuAdmi
+			MenuAdmi back =new MenuAdmi();
+			back.Show();
+			this.Hide();
 		}
 	}
 }

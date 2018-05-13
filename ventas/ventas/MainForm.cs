@@ -44,7 +44,7 @@ namespace ventas
 				this.Hide();
 				
 			}else if(leerAdmin.Read()){
-				Menu ma = new Menu();
+				MenuAdmi ma = new MenuAdmi();
 				MessageBox.Show("Bienvenido al sistema Administrador!");
 				ma.Show();
 				this.Hide();

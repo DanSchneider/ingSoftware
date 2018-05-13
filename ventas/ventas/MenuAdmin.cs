@@ -5,9 +5,9 @@ using System.Windows.Forms;
 namespace ventas
 {
 
-	public partial class Menu : Form
+	public partial class MenuAdmi : Form
 	{
-		public Menu()
+		public MenuAdmi()
 		{
 
 			InitializeComponent();

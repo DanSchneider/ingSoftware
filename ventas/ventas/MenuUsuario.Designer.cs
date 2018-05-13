@@ -58,6 +58,7 @@ namespace ventas
 			this.btnBuscar.Text = "Buscar";
 			this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnBuscar.UseVisualStyleBackColor = false;
+			this.btnBuscar.Click += new System.EventHandler(this.BtnBuscarClick);
 			// 
 			// btnVneta
 			// 
@@ -73,6 +74,7 @@ namespace ventas
 			this.btnVneta.Text = "Venta";
 			this.btnVneta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			this.btnVneta.UseVisualStyleBackColor = false;
+			this.btnVneta.Click += new System.EventHandler(this.BtnVnetaClick);
 			// 
 			// button1
 			// 

@@ -28,5 +28,39 @@ namespace ventas
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void Button6Click(object sender, EventArgs e)
+		{
+			MenuAdmi back = new MenuAdmi();
+			back.Show();
+			this.Hide();
+		}
+		void ButtonAddUsersClick(object sender, EventArgs e)
+		{
+			AgregarUsuarios add = new AgregarUsuarios();
+			add.Show();
+			this.Hide();
+		}
+		void ButtonShowUsrAdmiClick(object sender, EventArgs e)
+		{
+			VistaUsuariosAdmi vista = new VistaUsuariosAdmi();
+			vista.Show();
+		
+		}
+		void ButtonShowUsersClick(object sender, EventArgs e)
+		{
+			VistaUsuarios vista2 = new VistaUsuarios();
+			vista2.Show();
+		}
+		void ButtonDeleteUserClick(object sender, EventArgs e)
+		{
+			BorrarUsuario delete = new BorrarUsuario();
+			delete.Show();
+		}
+		void ButtonModificaUserClick(object sender, EventArgs e)
+		{
+			ModificarUsuario modf = new ModificarUsuario();
+			modf.Show();
+			
+		}
 	}
 }

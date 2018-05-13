@@ -57,6 +57,8 @@ namespace ventas
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.checkBox2 = new System.Windows.Forms.CheckBox();
+			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.txtAgregaAP = new System.Windows.Forms.TextBox();
 			this.txtAgregaNick = new System.Windows.Forms.TextBox();
 			this.txtAgregaPass = new System.Windows.Forms.TextBox();
@@ -64,8 +66,6 @@ namespace ventas
 			this.txtAgregaNombre = new System.Windows.Forms.TextBox();
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.btnNuevo = new System.Windows.Forms.Button();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
-			this.checkBox2 = new System.Windows.Forms.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -128,7 +128,24 @@ namespace ventas
 			this.groupBox1.Size = new System.Drawing.Size(698, 316);
 			this.groupBox1.TabIndex = 5;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "groupBox1";
+			// 
+			// checkBox2
+			// 
+			this.checkBox2.Location = new System.Drawing.Point(416, 286);
+			this.checkBox2.Name = "checkBox2";
+			this.checkBox2.Size = new System.Drawing.Size(104, 24);
+			this.checkBox2.TabIndex = 11;
+			this.checkBox2.Text = "Usuario";
+			this.checkBox2.UseVisualStyleBackColor = true;
+			// 
+			// checkBox1
+			// 
+			this.checkBox1.Location = new System.Drawing.Point(232, 286);
+			this.checkBox1.Name = "checkBox1";
+			this.checkBox1.Size = new System.Drawing.Size(135, 24);
+			this.checkBox1.TabIndex = 10;
+			this.checkBox1.Text = "Administrador";
+			this.checkBox1.UseVisualStyleBackColor = true;
 			// 
 			// txtAgregaAP
 			// 
@@ -185,24 +202,6 @@ namespace ventas
 			this.btnNuevo.TabIndex = 7;
 			this.btnNuevo.Text = "Nuevo";
 			this.btnNuevo.UseVisualStyleBackColor = true;
-			// 
-			// checkBox1
-			// 
-			this.checkBox1.Location = new System.Drawing.Point(232, 286);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(135, 24);
-			this.checkBox1.TabIndex = 10;
-			this.checkBox1.Text = "Administrador";
-			this.checkBox1.UseVisualStyleBackColor = true;
-			// 
-			// checkBox2
-			// 
-			this.checkBox2.Location = new System.Drawing.Point(416, 286);
-			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.Size = new System.Drawing.Size(104, 24);
-			this.checkBox2.TabIndex = 11;
-			this.checkBox2.Text = "Usuario";
-			this.checkBox2.UseVisualStyleBackColor = true;
 			// 
 			// AgregarUsuarios
 			// 

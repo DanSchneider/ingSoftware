@@ -1,8 +1,8 @@
 ﻿/*
  * Creado por SharpDevelop.
- * Usuario: jldg0
- * Fecha: 09/05/2018
- * Hora: 01:14 p. m.
+ * Usuario: JL
+ * Fecha: 10/05/2018
+ * Hora: 08:30 a.m.
  * 
  * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
  */
@@ -13,11 +13,11 @@ using System.Windows.Forms;
 namespace ventas
 {
 	/// <summary>
-	/// Description of ventasAdmi.
+	/// Description of buscarUsuario.
 	/// </summary>
-	public partial class ventasAdmi : Form
+	public partial class buscarUsuario : Form
 	{
-		public ventasAdmi()
+		public buscarUsuario()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -28,13 +28,11 @@ namespace ventas
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-		void ButtonIrMenuClick(object sender, EventArgs e)
+		void Button2Click(object sender, EventArgs e)
 		{
-		 	
-			MenuAdmi back = new MenuAdmi();
-			back.Show();
+			MenuUsuario menu = new MenuUsuario();
+			menu.Show();
 			this.Hide();
-			
 		}
 	}
 }
