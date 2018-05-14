@@ -15,7 +15,6 @@ namespace ventas
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.Button buttonVerTodo;
-		private System.Windows.Forms.Button buttonSurtir;
 		private System.Windows.Forms.Button button3;
 		
 		/// <summary>
@@ -40,27 +39,17 @@ namespace ventas
 		private void InitializeComponent()
 		{
 			this.buttonVerTodo = new System.Windows.Forms.Button();
-			this.buttonSurtir = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// buttonVerTodo
 			// 
-			this.buttonVerTodo.Location = new System.Drawing.Point(12, 28);
+			this.buttonVerTodo.Location = new System.Drawing.Point(12, 12);
 			this.buttonVerTodo.Name = "buttonVerTodo";
 			this.buttonVerTodo.Size = new System.Drawing.Size(93, 49);
 			this.buttonVerTodo.TabIndex = 0;
 			this.buttonVerTodo.Text = "Ver todos los productos";
 			this.buttonVerTodo.UseVisualStyleBackColor = true;
-			// 
-			// buttonSurtir
-			// 
-			this.buttonSurtir.Location = new System.Drawing.Point(12, 99);
-			this.buttonSurtir.Name = "buttonSurtir";
-			this.buttonSurtir.Size = new System.Drawing.Size(93, 49);
-			this.buttonSurtir.TabIndex = 1;
-			this.buttonSurtir.Text = "Surtir";
-			this.buttonSurtir.UseVisualStyleBackColor = true;
 			// 
 			// button3
 			// 
@@ -78,7 +67,6 @@ namespace ventas
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(295, 178);
 			this.Controls.Add(this.button3);
-			this.Controls.Add(this.buttonSurtir);
 			this.Controls.Add(this.buttonVerTodo);
 			this.Name = "productosAdmi";
 			this.Text = "Productos";
