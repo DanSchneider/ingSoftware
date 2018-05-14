@@ -79,10 +79,6 @@
     <Compile Include="Forms\MenuAdmin.Designer.cs">
       <DependentUpon>MenuAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MenuUsuario.cs" />
-    <Compile Include="Forms\MenuUsuario.Designer.cs">
-      <DependentUpon>MenuUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\ModificarUsuario.cs" />
     <Compile Include="Forms\ModificarUsuario.Designer.cs">
       <DependentUpon>ModificarUsuario.cs</DependentUpon>
@@ -139,9 +135,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuAdmin.resx">
       <DependentUpon>MenuAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MenuUsuario.resx">
-      <DependentUpon>MenuUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ProductosAdmi.resx">
       <DependentUpon>ProductosAdmi.cs</DependentUpon>

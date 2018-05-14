@@ -29,7 +29,6 @@ namespace ventas
 		private System.Windows.Forms.Button buttonCobrar;
 		private System.Windows.Forms.Button buttonAddToOrder;
 		private System.Windows.Forms.Button buttonCerrarCuenta;
-		private System.Windows.Forms.Button buttonBackPVtoMenuP;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.Label labelFechaActual;
@@ -70,7 +69,6 @@ namespace ventas
 			this.buttonCobrar = new System.Windows.Forms.Button();
 			this.buttonAddToOrder = new System.Windows.Forms.Button();
 			this.buttonCerrarCuenta = new System.Windows.Forms.Button();
-			this.buttonBackPVtoMenuP = new System.Windows.Forms.Button();
 			this.label6 = new System.Windows.Forms.Label();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.labelFechaActual = new System.Windows.Forms.Label();
@@ -82,7 +80,7 @@ namespace ventas
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(57, 23);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Cantidad";
+			this.label1.Text = "Disponible";
 			// 
 			// label2
 			// 
@@ -167,6 +165,7 @@ namespace ventas
 			this.buttonBuscaProducto.TabIndex = 11;
 			this.buttonBuscaProducto.Text = "Buscar producto";
 			this.buttonBuscaProducto.UseVisualStyleBackColor = true;
+			this.buttonBuscaProducto.Click += new System.EventHandler(this.ButtonBuscaProductoClick);
 			// 
 			// buttonCobrar
 			// 
@@ -194,16 +193,6 @@ namespace ventas
 			this.buttonCerrarCuenta.TabIndex = 14;
 			this.buttonCerrarCuenta.Text = "Cerrar cuenta";
 			this.buttonCerrarCuenta.UseVisualStyleBackColor = true;
-			// 
-			// buttonBackPVtoMenuP
-			// 
-			this.buttonBackPVtoMenuP.Location = new System.Drawing.Point(677, 353);
-			this.buttonBackPVtoMenuP.Name = "buttonBackPVtoMenuP";
-			this.buttonBackPVtoMenuP.Size = new System.Drawing.Size(119, 23);
-			this.buttonBackPVtoMenuP.TabIndex = 15;
-			this.buttonBackPVtoMenuP.Text = "Ir a Menú Usuario";
-			this.buttonBackPVtoMenuP.UseVisualStyleBackColor = true;
-			this.buttonBackPVtoMenuP.Click += new System.EventHandler(this.ButtonBackPVtoMenuPClick);
 			// 
 			// label6
 			// 
@@ -247,7 +236,6 @@ namespace ventas
 			this.Controls.Add(this.labelFechaActual);
 			this.Controls.Add(this.comboBox1);
 			this.Controls.Add(this.label6);
-			this.Controls.Add(this.buttonBackPVtoMenuP);
 			this.Controls.Add(this.buttonCerrarCuenta);
 			this.Controls.Add(this.buttonAddToOrder);
 			this.Controls.Add(this.buttonCobrar);

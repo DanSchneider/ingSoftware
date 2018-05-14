@@ -39,8 +39,8 @@ namespace ventas
 			
 			if (leer.Read()) {
 				MessageBox.Show("Bienvenido al sistema " + txtUsuario.Text + "!");
-				MenuUsuario m = new MenuUsuario();
-				m.Show();
+				puntoDeVenta venta = new puntoDeVenta();
+				venta.Show();
 				this.Hide();
 				
 			}else if(leerAdmin.Read()){

@@ -19,21 +19,17 @@ namespace ventas
 	{
 		public puntoDeVenta()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
 			InitializeComponent();
+		
+		}
+		void ButtonBuscaProductoClick(object sender, EventArgs e)
+		{	
 			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
-		}
-		void ButtonBackPVtoMenuPClick(object sender, EventArgs e)
-		{
-			MenuUsuario menu = new MenuUsuario();
-			menu.Show();
+			
+			buscarProductoUserMod busca = new buscarProductoUserMod();
+			busca.Show();
 			this.Hide();
-	
 		}
+		
 	}
 }
