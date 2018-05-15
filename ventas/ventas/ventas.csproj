@@ -51,123 +51,113 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgregarUsuarios.cs" />
-    <Compile Include="AgregarUsuarios.Designer.cs">
+    <Compile Include="Clases\conexion.cs" />
+    <Compile Include="Clases\Program.cs" />
+    <Compile Include="Clases\Usuarios.cs" />
+    <Compile Include="Clases\usuariosSql.cs" />
+    <Compile Include="Forms\AgregarUsuarios.cs" />
+    <Compile Include="Forms\AgregarUsuarios.Designer.cs">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="BorrarUsuario.cs" />
-    <Compile Include="BorrarUsuario.Designer.cs">
+    <Compile Include="Forms\BorrarUsuario.cs" />
+    <Compile Include="Forms\BorrarUsuario.Designer.cs">
       <DependentUpon>BorrarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarProdUsuario.cs" />
-    <Compile Include="BuscarProdUsuario.Designer.cs">
-      <DependentUpon>BuscarProdUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="conexion.cs" />
-    <Compile Include="BuscarAdmi.cs" />
-    <Compile Include="BuscarAdmi.Designer.cs">
+    <Compile Include="Forms\BuscarAdmi.cs" />
+    <Compile Include="Forms\BuscarAdmi.Designer.cs">
       <DependentUpon>BuscarAdmi.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs" />
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\BuscarProdUsuario.cs" />
+    <Compile Include="Forms\BuscarProdUsuario.Designer.cs">
+      <DependentUpon>BuscarProdUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs" />
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuAdmin.cs" />
-    <Compile Include="MenuAdmin.Designer.cs">
+    <Compile Include="Forms\MenuAdmin.cs" />
+    <Compile Include="Forms\MenuAdmin.Designer.cs">
       <DependentUpon>MenuAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuUsuario.cs" />
-    <Compile Include="MenuUsuario.Designer.cs">
-      <DependentUpon>MenuUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ModificarUsuario.cs" />
-    <Compile Include="ModificarUsuario.Designer.cs">
+    <Compile Include="Forms\ModificarUsuario.cs" />
+    <Compile Include="Forms\ModificarUsuario.Designer.cs">
       <DependentUpon>ModificarUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductoASurtir.cs" />
-    <Compile Include="ProductoASurtir.Designer.cs">
-      <DependentUpon>ProductoASurtir.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProductosAdmi.cs" />
-    <Compile Include="ProductosAdmi.Designer.cs">
+    <Compile Include="Forms\productosAdmi.cs" />
+    <Compile Include="Forms\ProductosAdmi.Designer.cs">
       <DependentUpon>ProductosAdmi.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductosTotales.cs" />
-    <Compile Include="ProductosTotales.Designer.cs">
+    <Compile Include="Forms\ProductosTotales.cs" />
+    <Compile Include="Forms\ProductosTotales.Designer.cs">
       <DependentUpon>ProductosTotales.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PuntoDeVenta.cs" />
-    <Compile Include="PuntoDeVenta.Designer.cs">
+    <Compile Include="Forms\puntoDeVenta.cs" />
+    <Compile Include="Forms\PuntoDeVenta.Designer.cs">
       <DependentUpon>PuntoDeVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarios.cs" />
-    <Compile Include="UsuariosAdmi.cs" />
-    <Compile Include="UsuariosAdmi.Designer.cs">
+    <Compile Include="Forms\UsuariosAdmi.cs" />
+    <Compile Include="Forms\UsuariosAdmi.Designer.cs">
       <DependentUpon>UsuariosAdmi.cs</DependentUpon>
     </Compile>
-    <Compile Include="UsuariosSql.cs" />
-    <Compile Include="VentanaBuscar.cs" />
-    <Compile Include="VentanaBuscar.Designer.cs">
+    <Compile Include="Forms\VentanaBuscar.cs" />
+    <Compile Include="Forms\VentanaBuscar.Designer.cs">
       <DependentUpon>VentanaBuscar.cs</DependentUpon>
     </Compile>
-    <Compile Include="VentasAdmi.cs" />
-    <Compile Include="VentasAdmi.Designer.cs">
+    <Compile Include="Forms\ventasAdmi.cs" />
+    <Compile Include="Forms\VentasAdmi.Designer.cs">
       <DependentUpon>VentasAdmi.cs</DependentUpon>
     </Compile>
-    <Compile Include="VistaUsuarios.cs" />
-    <Compile Include="VistaUsuarios.Designer.cs">
+    <Compile Include="Forms\VistaUsuarios.cs" />
+    <Compile Include="Forms\VistaUsuarios.Designer.cs">
       <DependentUpon>VistaUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="VistaUsuariosAdmi.cs" />
-    <Compile Include="VistaUsuariosAdmi.Designer.cs">
+    <Compile Include="Forms\VistaUsuariosAdmi.cs" />
+    <Compile Include="Forms\VistaUsuariosAdmi.Designer.cs">
       <DependentUpon>VistaUsuariosAdmi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AgregarUsuarios.resx">
+    <EmbeddedResource Include="Forms\AgregarUsuarios.resx">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarAdmi.resx">
+    <EmbeddedResource Include="Forms\BuscarAdmi.resx">
       <DependentUpon>BuscarAdmi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarProdUsuario.resx">
+    <EmbeddedResource Include="Forms\BuscarProdUsuario.resx">
       <DependentUpon>BuscarProdUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuAdmin.resx">
+    <EmbeddedResource Include="Forms\MenuAdmin.resx">
       <DependentUpon>MenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuUsuario.resx">
-      <DependentUpon>MenuUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProductoASurtir.resx">
-      <DependentUpon>ProductoASurtir.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProductosAdmi.resx">
+    <EmbeddedResource Include="Forms\ProductosAdmi.resx">
       <DependentUpon>ProductosAdmi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductosTotales.resx">
+    <EmbeddedResource Include="Forms\ProductosTotales.resx">
       <DependentUpon>ProductosTotales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PuntoDeVenta.resx">
+    <EmbeddedResource Include="Forms\PuntoDeVenta.resx">
       <DependentUpon>PuntoDeVenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UsuariosAdmi.resx">
+    <EmbeddedResource Include="Forms\UsuariosAdmi.resx">
       <DependentUpon>UsuariosAdmi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VentanaBuscar.resx">
+    <EmbeddedResource Include="Forms\VentanaBuscar.resx">
       <DependentUpon>VentanaBuscar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VentasAdmi.resx">
+    <EmbeddedResource Include="Forms\VentasAdmi.resx">
       <DependentUpon>VentasAdmi.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clases" />
+    <Folder Include="Forms" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

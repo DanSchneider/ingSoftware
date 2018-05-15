@@ -8,7 +8,7 @@
  */
 namespace ventas
 {
-	partial class buscarUsuario
+	partial class buscarProductoUserMod
 	{
 		/// <summary>
 		/// Designer variable used to keep track of non-visual components.
@@ -18,11 +18,10 @@ namespace ventas
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TextBox textBoxProducto;
 		private System.Windows.Forms.TextBox textBoxCantidadDisponible;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox textBoxBusqueda;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Button buttonBusca;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button buttonSeleccionar;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -49,11 +48,10 @@ namespace ventas
 			this.label2 = new System.Windows.Forms.Label();
 			this.textBoxProducto = new System.Windows.Forms.TextBox();
 			this.textBoxCantidadDisponible = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.textBoxBusqueda = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.buttonBusca = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button1 = new System.Windows.Forms.Button();
+			this.buttonSeleccionar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -86,12 +84,12 @@ namespace ventas
 			this.textBoxCantidadDisponible.Size = new System.Drawing.Size(100, 20);
 			this.textBoxCantidadDisponible.TabIndex = 3;
 			// 
-			// textBox1
+			// textBoxBusqueda
 			// 
-			this.textBox1.Location = new System.Drawing.Point(12, 35);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(317, 20);
-			this.textBox1.TabIndex = 4;
+			this.textBoxBusqueda.Location = new System.Drawing.Point(12, 35);
+			this.textBoxBusqueda.Name = "textBoxBusqueda";
+			this.textBoxBusqueda.Size = new System.Drawing.Size(317, 20);
+			this.textBoxBusqueda.TabIndex = 4;
 			// 
 			// label3
 			// 
@@ -109,41 +107,32 @@ namespace ventas
 			this.buttonBusca.TabIndex = 6;
 			this.buttonBusca.Text = "Buscar";
 			this.buttonBusca.UseVisualStyleBackColor = true;
+			this.buttonBusca.Click += new System.EventHandler(this.ButtonBuscaClick);
 			// 
-			// button2
+			// buttonSeleccionar
 			// 
-			this.button2.Location = new System.Drawing.Point(528, 22);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(75, 45);
-			this.button2.TabIndex = 7;
-			this.button2.Text = "Regresar a menú";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.Button2Click);
+			this.buttonSeleccionar.Location = new System.Drawing.Point(528, 86);
+			this.buttonSeleccionar.Name = "buttonSeleccionar";
+			this.buttonSeleccionar.Size = new System.Drawing.Size(75, 46);
+			this.buttonSeleccionar.TabIndex = 8;
+			this.buttonSeleccionar.Text = "Seleccionar";
+			this.buttonSeleccionar.UseVisualStyleBackColor = true;
+			this.buttonSeleccionar.Click += new System.EventHandler(this.ButtonSeleccionarClick);
 			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(528, 86);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 46);
-			this.button1.TabIndex = 8;
-			this.button1.Text = "Seleccionar";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// buscarUsuario
+			// buscarProductoUserMod
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(615, 171);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.button2);
+			this.Controls.Add(this.buttonSeleccionar);
 			this.Controls.Add(this.buttonBusca);
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.textBoxBusqueda);
 			this.Controls.Add(this.textBoxCantidadDisponible);
 			this.Controls.Add(this.textBoxProducto);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
-			this.Name = "buscarUsuario";
+			this.Name = "buscarProductoUserMod";
 			this.Text = "Buscar";
 			this.ResumeLayout(false);
 			this.PerformLayout();

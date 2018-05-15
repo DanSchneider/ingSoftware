@@ -21,16 +21,8 @@ CREATE TABLE `admins` (
   `APELLIDO_M` varchar(20) DEFAULT NULL,
   `NICKNAME` varchar(20) DEFAULT NULL,
   `PASS` varchar(20) DEFAULT NULL,
+
   PRIMARY KEY (`ID_ADMIN`)
-);
-
-
-CREATE TABLE proveedores
-(
-  ID_PROVEEDOR INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  NOMBE TEXT,
-  E_MAIL TEXT,
-  TELEFONO DOUBLE
 );
 
 
@@ -40,20 +32,9 @@ CREATE TABLE productos
   NOMBRE TEXT,
   EXISTENCIA INT,
   PRECIO_NETO INT,
-  PRECIO_VENTA INT,
-  ID_PROVEEDOR INT,
-
-  FOREIGN KEY (ID_PROVEEDOR) REFERENCES proveedores(ID_PROVEEDOR)
+  PRECIO_VENTA INT
 );
 
-CREATE TABLE categoria
-(
-  ID_CATEGORIA INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  NOMBRE VARCHAR(40),
-  ID_PRODUCTO INT,
-
-  FOREIGN KEY (ID_PRODUCTO) REFERENCES productos(ID_PRODUCTO)
-);
 
 CREATE TABLE ventas
 (
@@ -70,4 +51,15 @@ CREATE TABLE ventas
 
 insert into usuarios values (1,'Luis Gerardo','Roman','Marin','luis5648','12345');
 
+
+insert into admins values (1,'Jose Luis','Del Toro','Gomez','admin','Administrad0r');
+
 insert into admins values (1,'Jose Luis','Del Toro','Gomez','admin','Administrad0r')
+
+insert into productos values (1,'Cafe americano chico','50','10','16','1')
+insert into productos values (2,'Cafe americano mediano','50','13','19','1')
+insert into productos values (3,'Cafe americano grande','50','15','21','1')
+insert into productos values (4,'Cafe espreso','50','13','16','1')
+insert into productos values (5,'Cafe espreso doble','50','16','24','1')
+
+
