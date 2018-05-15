@@ -1,22 +1,136 @@
 ﻿using System;
+using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 
 namespace ventas
 {
 
-	public static class UsuariosSql
+	public class UsuariosSql
 	{
+		
+		
+		//buscar usuarios normales:
 		public static int Agregar(Usuarios pUsuarios)
 		{
 
 			int retorno = 0;
 
 			MySqlCommand comando = new MySqlCommand(string.Format(
-				                              "Insert into usuarios (NOMBRE, APELLIDO_P, APELLIDO_M, NICKNAME, PASSWORD) values ('{0}','{1}','{2}', '{3}','{4}')",
-				                              pUsuarios.NOMBRE, pUsuarios.APELLIDO_P, pUsuarios.APELLIDO_M, pUsuarios.NICKNAME, pUsuarios.PASSWORD),
-				                              conexion.ObtenerConexion());
+				"Insert into usuarios (NOMBRE, APELLIDO_P, APELLIDO_M, NICKNAME, PASSWORD) values ('{0}','{1}','{2}', '{3}','{4}')",
+				pUsuarios.NOMBRE, pUsuarios.APELLIDO_P, pUsuarios.APELLIDO_M, pUsuarios.NICKNAME, pUsuarios.PASSWORD),
+			                                        conexion.ObtenerConexion());
 			retorno = comando.ExecuteNonQuery();
 			return  retorno;
+		}
+		
+		
+		
+		public static List<Usuarios> Buscar(string pNOMBRE, string pAPELLIDO_P)
+		{
+			List<Usuarios> _lista = new List<Usuarios>();
+			
+			MySqlCommand _comando = new MySqlCommand(String.Format(
+				"SELECT ID_USUARIO, NOMBRE, APELLIDO_P, APELLIDO_M, NICKNAME, PASSWORD FROM usuarios  where NOMBRE ='{0}' or APELLIDO_P='{1}'", pNOMBRE,pAPELLIDO_P), conexion.ObtenerConexion());
+			MySqlDataReader _reader = _comando.ExecuteReader();
+			while (_reader.Read())
+			{
+				Usuarios pUsuarios = new Usuarios();
+				
+				pUsuarios.Id = _reader.GetInt32(0);
+				pUsuarios.NOMBRE = _reader.GetString(1);
+				pUsuarios.APELLIDO_P = _reader.GetString(2);
+				pUsuarios.APELLIDO_M = _reader.GetString(3);
+				pUsuarios.NICKNAME = _reader.GetString(4);
+				pUsuarios.PASSWORD = _reader.GetString(5);
+
+				_lista.Add(pUsuarios);
+			}
+			
+			return _lista;
+		}
+		
+		public static List<Usuarios>  mostrarUsuarios(){
+			List<Usuarios> _lista2 = new List<Usuarios>();
+			
+			MySqlConnection con = conexion.ObtenerConexion();
+			
+			MySqlCommand _comando = new MySqlCommand(String.Format("SELECT * FROM usuarios"), con);
+			MySqlDataReader _reader = _comando.ExecuteReader();
+			while (_reader.Read())
+			{
+				Usuarios pUsuarios = new Usuarios();
+				
+				pUsuarios.Id = _reader.GetInt32(0);
+				pUsuarios.NOMBRE = _reader.GetString(1);
+				pUsuarios.APELLIDO_P = _reader.GetString(2);
+				pUsuarios.APELLIDO_M = _reader.GetString(3);
+				pUsuarios.NICKNAME = _reader.GetString(4);
+				pUsuarios.PASSWORD = _reader.GetString(5);
+
+				_lista2.Add(pUsuarios);
+			}
+			
+			return _lista2;
+			
+		}
+		
+		public static Usuarios ObtenerUsuarios(int pId)
+		{
+			Usuarios pUsuarios = new Usuarios();
+			MySqlConnection con = conexion.ObtenerConexion();
+
+			MySqlCommand _comando = new MySqlCommand(String.Format("SELECT ID_USUARIO, NOMBRE, APELLIDO_P, APELLIDO_M, NICKNAME, PASSWORD FROM usuarios  where ID_USUARIO={0}", pId), con);
+			MySqlDataReader _reader = _comando.ExecuteReader();
+			while (_reader.Read())
+			{
+				pUsuarios.Id = _reader.GetInt32(0);
+				pUsuarios.NOMBRE = _reader.GetString(1);
+				pUsuarios.APELLIDO_P = _reader.GetString(2);
+				pUsuarios.APELLIDO_M = _reader.GetString(3);
+				pUsuarios.NICKNAME = _reader.GetString(4);
+				pUsuarios.PASSWORD = _reader.GetString(5);
+				
+			}
+
+			con.Close();
+			return pUsuarios;
+			
+		}
+		
+		public static int Actualizar(Usuarios pUsuarios)
+		{
+			int retorno = 0;
+			
+			MySqlConnection con = conexion.ObtenerConexion();
+			
+			MySqlCommand comando = new MySqlCommand(string.Format("Update usuarios set NOMBRE='"+pUsuarios.NOMBRE+"', APELLIDO_P='"+
+			                                                      pUsuarios.APELLIDO_P+"', APELLIDO_M='"+pUsuarios.APELLIDO_M+
+			                                                      "', NICKNAME='"+pUsuarios.NICKNAME+"', PASSWORD='"
+			                                                      +pUsuarios.PASSWORD+"' where ID_USUARIO='"+pUsuarios.Id+"'"), con);
+			
+			//MySqlCommand comando = new MySqlCommand(string.Format("Update clientes set NOMBRE='{0}', APELLIDO_P='{1}', APELLIDO_M='{2}', NICKNAME='{3}', PASSWORD='{4}' where ID_USUARIO={5}",
+			//  pUsuarios.NOMBRE, pUsuarios.APELLIDO_P, pUsuarios.NICKNAME, pUsuarios.PASSWORD, pUsuarios.Id), con);
+
+			retorno = comando.ExecuteNonQuery();
+			con.Close();
+			
+			return retorno;
+
+
+		}
+		
+		public static int Eliminar(int pId)
+		{
+			int retorno = 0;
+			
+			MySqlConnection con = conexion.ObtenerConexion();
+			MySqlCommand comando = new MySqlCommand(string.Format("Delete From usuarios where ID_USUARIO={0}", pId), con);
+
+			retorno = comando.ExecuteNonQuery();
+			con.Close();
+
+			return retorno;
+
 		}
 	}
 }

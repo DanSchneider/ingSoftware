@@ -59,17 +59,9 @@
     <Compile Include="Forms\AgregarUsuarios.Designer.cs">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BorrarUsuario.cs" />
-    <Compile Include="Forms\BorrarUsuario.Designer.cs">
-      <DependentUpon>BorrarUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\BuscarAdmi.cs" />
-    <Compile Include="Forms\BuscarAdmi.Designer.cs">
-      <DependentUpon>BuscarAdmi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\BuscarProdUsuario.cs" />
-    <Compile Include="Forms\BuscarProdUsuario.Designer.cs">
-      <DependentUpon>BuscarProdUsuario.cs</DependentUpon>
+    <Compile Include="Forms\BuscarUsuarios.cs" />
+    <Compile Include="Forms\BuscarUsuarios.Designer.cs">
+      <DependentUpon>BuscarUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainForm.cs" />
     <Compile Include="Forms\MainForm.Designer.cs">
@@ -87,33 +79,13 @@
     <Compile Include="Forms\ProductosAdmi.Designer.cs">
       <DependentUpon>ProductosAdmi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ProductosTotales.cs" />
-    <Compile Include="Forms\ProductosTotales.Designer.cs">
-      <DependentUpon>ProductosTotales.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\puntoDeVenta.cs" />
     <Compile Include="Forms\PuntoDeVenta.Designer.cs">
       <DependentUpon>PuntoDeVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UsuariosAdmi.cs" />
-    <Compile Include="Forms\UsuariosAdmi.Designer.cs">
-      <DependentUpon>UsuariosAdmi.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\VentanaBuscar.cs" />
     <Compile Include="Forms\VentanaBuscar.Designer.cs">
       <DependentUpon>VentanaBuscar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\ventasAdmi.cs" />
-    <Compile Include="Forms\VentasAdmi.Designer.cs">
-      <DependentUpon>VentasAdmi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\VistaUsuarios.cs" />
-    <Compile Include="Forms\VistaUsuarios.Designer.cs">
-      <DependentUpon>VistaUsuarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\VistaUsuariosAdmi.cs" />
-    <Compile Include="Forms\VistaUsuariosAdmi.Designer.cs">
-      <DependentUpon>VistaUsuariosAdmi.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -124,11 +96,8 @@
     <EmbeddedResource Include="Forms\AgregarUsuarios.resx">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BuscarAdmi.resx">
-      <DependentUpon>BuscarAdmi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BuscarProdUsuario.resx">
-      <DependentUpon>BuscarProdUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\BuscarUsuarios.resx">
+      <DependentUpon>BuscarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -139,20 +108,11 @@
     <EmbeddedResource Include="Forms\ProductosAdmi.resx">
       <DependentUpon>ProductosAdmi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ProductosTotales.resx">
-      <DependentUpon>ProductosTotales.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\PuntoDeVenta.resx">
       <DependentUpon>PuntoDeVenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UsuariosAdmi.resx">
-      <DependentUpon>UsuariosAdmi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\VentanaBuscar.resx">
       <DependentUpon>VentanaBuscar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\VentasAdmi.resx">
-      <DependentUpon>VentasAdmi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

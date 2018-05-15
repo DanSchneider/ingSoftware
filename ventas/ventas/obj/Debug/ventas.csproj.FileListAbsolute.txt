@@ -68,14 +68,10 @@ C:\Users\Luis\Downloads\ingSoftware\ventas\ventas\obj\Debug\ventas.ventasAdmi.re
 C:\Users\Luis\Downloads\ingSoftware\ventas\ventas\obj\Debug\ventas.csproj.GenerateResource.Cache
 C:\Users\Luis\Downloads\ingSoftware\ventas\ventas\obj\Debug\ventas.exe
 C:\Users\Luis\Downloads\ingSoftware\ventas\ventas\obj\Debug\ventas.pdb
-C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.BuscarAdmi.resources
 C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.MenuAdmi.resources
 C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.productosAdmi.resources
-C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.ProductosTotales.resources
 C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.puntoDeVenta.resources
-C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.UsuariosAdmi.resources
 C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.VentanaBuscar.resources
-C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.ventasAdmi.resources
 C:\Users\JL\Documents\GitHub\ingSoftware\ventas\ventas\obj\Debug\ventas.csprojResolveAssemblyReference.cache
 C:\Users\JL\Documents\GitHub\ingSoftware\ventas\ventas\obj\Debug\ventas.AgregarUsuarios.resources
 C:\Users\JL\Documents\GitHub\ingSoftware\ventas\ventas\obj\Debug\ventas.BuscarAdmi.resources
@@ -94,4 +90,4 @@ C:\Users\JL\Documents\GitHub\ingSoftware\ventas\ventas\bin\Debug\ventas.exe
 C:\Users\JL\Documents\GitHub\ingSoftware\ventas\ventas\bin\Debug\ventas.pdb
 C:\Users\JL\Documents\GitHub\ingSoftware\ventas\ventas\obj\Debug\ventas.pdb
 C:\Users\JL\Documents\GitHub\ingSoftware\ventas\ventas\obj\Debug\ventas.buscarProductoUserMod.resources
-C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.buscarProductoUserMod.resources
+C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.Forms.BuscarUsuarios.resources

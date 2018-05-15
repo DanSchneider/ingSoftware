@@ -26,8 +26,8 @@ namespace ventas
 		{	
 			
 			
-			buscarProductoUserMod busca = new buscarProductoUserMod();
-			busca.Show();
+			VentanaBuscar vb = new VentanaBuscar();
+			vb.Show();
 			this.Hide();
 		}
 		

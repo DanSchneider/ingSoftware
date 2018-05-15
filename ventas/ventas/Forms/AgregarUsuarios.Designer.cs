@@ -27,8 +27,10 @@ namespace ventas
 		private System.Windows.Forms.TextBox txtAgregaNombre;
 		private System.Windows.Forms.Button btnGuardar;
 		private System.Windows.Forms.Button btnNuevo;
-		private System.Windows.Forms.CheckBox checkBox2;
-		private System.Windows.Forms.CheckBox checkBox1;
+		private System.Windows.Forms.Button btnVer;
+		private System.Windows.Forms.Button btnRegresar;
+		private System.Windows.Forms.Button btnEliminar;
+		private System.Windows.Forms.Button btnActualizar;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -57,8 +59,6 @@ namespace ventas
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.checkBox2 = new System.Windows.Forms.CheckBox();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.txtAgregaAP = new System.Windows.Forms.TextBox();
 			this.txtAgregaNick = new System.Windows.Forms.TextBox();
 			this.txtAgregaPass = new System.Windows.Forms.TextBox();
@@ -66,6 +66,10 @@ namespace ventas
 			this.txtAgregaNombre = new System.Windows.Forms.TextBox();
 			this.btnGuardar = new System.Windows.Forms.Button();
 			this.btnNuevo = new System.Windows.Forms.Button();
+			this.btnVer = new System.Windows.Forms.Button();
+			this.btnRegresar = new System.Windows.Forms.Button();
+			this.btnEliminar = new System.Windows.Forms.Button();
+			this.btnActualizar = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -111,8 +115,6 @@ namespace ventas
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.checkBox2);
-			this.groupBox1.Controls.Add(this.checkBox1);
 			this.groupBox1.Controls.Add(this.txtAgregaAP);
 			this.groupBox1.Controls.Add(this.txtAgregaNick);
 			this.groupBox1.Controls.Add(this.txtAgregaPass);
@@ -123,29 +125,13 @@ namespace ventas
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Controls.Add(this.label4);
 			this.groupBox1.Controls.Add(this.label3);
-			this.groupBox1.Location = new System.Drawing.Point(12, 83);
+			this.groupBox1.ForeColor = System.Drawing.Color.White;
+			this.groupBox1.Location = new System.Drawing.Point(28, 83);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(698, 316);
 			this.groupBox1.TabIndex = 5;
 			this.groupBox1.TabStop = false;
-			// 
-			// checkBox2
-			// 
-			this.checkBox2.Location = new System.Drawing.Point(416, 286);
-			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.Size = new System.Drawing.Size(104, 24);
-			this.checkBox2.TabIndex = 11;
-			this.checkBox2.Text = "Usuario";
-			this.checkBox2.UseVisualStyleBackColor = true;
-			// 
-			// checkBox1
-			// 
-			this.checkBox1.Location = new System.Drawing.Point(232, 286);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(135, 24);
-			this.checkBox1.TabIndex = 10;
-			this.checkBox1.Text = "Administrador";
-			this.checkBox1.UseVisualStyleBackColor = true;
+			this.groupBox1.Text = "Añadir usuarios";
 			// 
 			// txtAgregaAP
 			// 
@@ -185,36 +171,87 @@ namespace ventas
 			// btnGuardar
 			// 
 			this.btnGuardar.ForeColor = System.Drawing.Color.Black;
-			this.btnGuardar.Location = new System.Drawing.Point(222, 12);
+			this.btnGuardar.Location = new System.Drawing.Point(149, 22);
 			this.btnGuardar.Name = "btnGuardar";
-			this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+			this.btnGuardar.Size = new System.Drawing.Size(144, 28);
 			this.btnGuardar.TabIndex = 6;
-			this.btnGuardar.Text = "Guardar";
+			this.btnGuardar.Text = "&Guardar";
 			this.btnGuardar.UseVisualStyleBackColor = true;
 			this.btnGuardar.Click += new System.EventHandler(this.BtnGuardarClick);
 			// 
 			// btnNuevo
 			// 
 			this.btnNuevo.ForeColor = System.Drawing.Color.Black;
-			this.btnNuevo.Location = new System.Drawing.Point(390, 12);
+			this.btnNuevo.Location = new System.Drawing.Point(311, 22);
 			this.btnNuevo.Name = "btnNuevo";
-			this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+			this.btnNuevo.Size = new System.Drawing.Size(144, 28);
 			this.btnNuevo.TabIndex = 7;
-			this.btnNuevo.Text = "Nuevo";
+			this.btnNuevo.Text = "&Nuevo";
 			this.btnNuevo.UseVisualStyleBackColor = true;
+			this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+			// 
+			// btnVer
+			// 
+			this.btnVer.ForeColor = System.Drawing.Color.Black;
+			this.btnVer.Location = new System.Drawing.Point(473, 22);
+			this.btnVer.Name = "btnVer";
+			this.btnVer.Size = new System.Drawing.Size(144, 28);
+			this.btnVer.TabIndex = 8;
+			this.btnVer.Text = "&Buscar usuarios";
+			this.btnVer.UseVisualStyleBackColor = true;
+			this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
+			// 
+			// btnRegresar
+			// 
+			this.btnRegresar.ForeColor = System.Drawing.Color.Black;
+			this.btnRegresar.Location = new System.Drawing.Point(149, 416);
+			this.btnRegresar.Name = "btnRegresar";
+			this.btnRegresar.Size = new System.Drawing.Size(144, 28);
+			this.btnRegresar.TabIndex = 9;
+			this.btnRegresar.Text = "&Regresar";
+			this.btnRegresar.UseVisualStyleBackColor = true;
+			this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+			// 
+			// btnEliminar
+			// 
+			this.btnEliminar.ForeColor = System.Drawing.Color.Black;
+			this.btnEliminar.Location = new System.Drawing.Point(473, 416);
+			this.btnEliminar.Name = "btnEliminar";
+			this.btnEliminar.Size = new System.Drawing.Size(144, 28);
+			this.btnEliminar.TabIndex = 10;
+			this.btnEliminar.Text = "&Eliminar";
+			this.btnEliminar.UseVisualStyleBackColor = true;
+			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+			// 
+			// btnActualizar
+			// 
+			this.btnActualizar.ForeColor = System.Drawing.Color.Black;
+			this.btnActualizar.Location = new System.Drawing.Point(311, 416);
+			this.btnActualizar.Name = "btnActualizar";
+			this.btnActualizar.Size = new System.Drawing.Size(144, 28);
+			this.btnActualizar.TabIndex = 11;
+			this.btnActualizar.Text = "&Actualizar";
+			this.btnActualizar.UseVisualStyleBackColor = true;
+			this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
 			// 
 			// AgregarUsuarios
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Black;
-			this.ClientSize = new System.Drawing.Size(732, 427);
+			this.ClientSize = new System.Drawing.Size(766, 456);
+			this.Controls.Add(this.btnActualizar);
+			this.Controls.Add(this.btnEliminar);
+			this.Controls.Add(this.btnRegresar);
+			this.Controls.Add(this.btnVer);
 			this.Controls.Add(this.btnNuevo);
 			this.Controls.Add(this.btnGuardar);
 			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.ForeColor = System.Drawing.Color.White;
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.Margin = new System.Windows.Forms.Padding(4);
+			this.MaximizeBox = false;
 			this.Name = "AgregarUsuarios";
 			this.Text = "AgregarUsuarios";
 			this.groupBox1.ResumeLayout(false);
