@@ -56,6 +56,11 @@ insert into admins values (1,'Jose Luis','Del Toro','Gomez','admin','Administrad
 
 insert into admins values (1,'Jose Luis','Del Toro','Gomez','admin','Administrad0r')
 
+<<<<<<< HEAD
+=======
+insert into proveedores values (1','Cafe Colombia','CaffeColom@hotmail.com','5556148755');
+
+>>>>>>> 07563f7ea25bffcd481edefce1d8d9485b469cd6
 insert into productos values (1,'Cafe americano chico','50','10','16','1')
 insert into productos values (2,'Cafe americano mediano','50','13','19','1')
 insert into productos values (3,'Cafe americano grande','50','15','21','1')
