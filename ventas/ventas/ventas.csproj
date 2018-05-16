@@ -52,12 +52,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\conexion.cs" />
+    <Compile Include="Clases\Productos.cs" />
+    <Compile Include="Clases\ProductosSql.cs" />
     <Compile Include="Clases\Program.cs" />
     <Compile Include="Clases\Usuarios.cs" />
     <Compile Include="Clases\usuariosSql.cs" />
+    <Compile Include="Clases\Ventas.cs" />
+    <Compile Include="Forms\AgregarProductos.cs" />
+    <Compile Include="Forms\AgregarProductos.Designer.cs">
+      <DependentUpon>AgregarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AgregarUsuarios.cs" />
     <Compile Include="Forms\AgregarUsuarios.Designer.cs">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BuscarProducto.cs" />
+    <Compile Include="Forms\BuscarProducto.Designer.cs">
+      <DependentUpon>BuscarProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\BuscarUsuarios.cs" />
     <Compile Include="Forms\BuscarUsuarios.Designer.cs">
@@ -83,18 +94,20 @@
     <Compile Include="Forms\PuntoDeVenta.Designer.cs">
       <DependentUpon>PuntoDeVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\VentanaBuscar.cs" />
-    <Compile Include="Forms\VentanaBuscar.Designer.cs">
-      <DependentUpon>VentanaBuscar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\AgregarProductos.resx">
+      <DependentUpon>AgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AgregarUsuarios.resx">
       <DependentUpon>AgregarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BuscarProducto.resx">
+      <DependentUpon>BuscarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BuscarUsuarios.resx">
       <DependentUpon>BuscarUsuarios.cs</DependentUpon>
@@ -110,9 +123,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PuntoDeVenta.resx">
       <DependentUpon>PuntoDeVenta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\VentanaBuscar.resx">
-      <DependentUpon>VentanaBuscar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

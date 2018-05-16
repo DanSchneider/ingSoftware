@@ -30,5 +30,11 @@ namespace ventas
 			back.Show();
 			this.Hide();
 		}
+		void buttonVerTodo_Click(object sender, EventArgs e)
+		{
+			Forms.AgregarProductos ap = new Forms.AgregarProductos();
+			ap.Show();
+			this.Hide();
+		}
 	}
 }

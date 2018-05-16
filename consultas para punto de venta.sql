@@ -31,8 +31,8 @@ CREATE TABLE productos
   ID_PRODUCTO INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   NOMBRE TEXT,
   EXISTENCIA INT,
-  PRECIO_NETO INT,
-  PRECIO_VENTA INT
+  PRECIO_NETO FLOAT,
+  PRECIO_VENTA FLOAT
 );
 
 
@@ -54,17 +54,17 @@ insert into usuarios values (1,'Luis Gerardo','Roman','Marin','luis5648','12345'
 
 insert into admins values (1,'Jose Luis','Del Toro','Gomez','admin','Administrad0r');
 
-insert into admins values (1,'Jose Luis','Del Toro','Gomez','admin','Administrad0r')
 
 
 
 
 
 
-insert into productos values (1,'Cafe americano chico','50','10','16','1')
-insert into productos values (2,'Cafe americano mediano','50','13','19','1')
-insert into productos values (3,'Cafe americano grande','50','15','21','1')
-insert into productos values (4,'Cafe espreso','50','13','16','1')
-insert into productos values (5,'Cafe espreso doble','50','16','24','1')
+
+insert into productos values (1,'Cafe americano chico',50,10,16);
+insert into productos values (2,'Cafe americano mediano',50,13,19);
+insert into productos values (3,'Cafe americano grande',50,15,21);
+insert into productos values (4,'Cafe espreso',50,13,16);
+insert into productos values (5,'Cafe espreso doble',50,16,24);
 
 

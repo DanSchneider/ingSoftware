@@ -50,6 +50,7 @@ namespace ventas
 			this.buttonVerTodo.TabIndex = 0;
 			this.buttonVerTodo.Text = "Ver todos los productos";
 			this.buttonVerTodo.UseVisualStyleBackColor = true;
+			this.buttonVerTodo.Click += new System.EventHandler(this.buttonVerTodo_Click);
 			// 
 			// button3
 			// 

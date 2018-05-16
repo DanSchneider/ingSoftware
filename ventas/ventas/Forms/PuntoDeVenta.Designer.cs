@@ -88,7 +88,7 @@ namespace ventas
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(65, 23);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "Descripsión";
+			this.label2.Text = "Descripción";
 			// 
 			// label3
 			// 
@@ -153,6 +153,7 @@ namespace ventas
 			// 
 			this.listProductos.FormattingEnabled = true;
 			this.listProductos.Location = new System.Drawing.Point(12, 70);
+			this.listProductos.MultiColumn = true;
 			this.listProductos.Name = "listProductos";
 			this.listProductos.Size = new System.Drawing.Size(617, 290);
 			this.listProductos.TabIndex = 10;
@@ -175,6 +176,7 @@ namespace ventas
 			this.buttonCobrar.TabIndex = 12;
 			this.buttonCobrar.Text = "Cobrar";
 			this.buttonCobrar.UseVisualStyleBackColor = true;
+			this.buttonCobrar.Click += new System.EventHandler(this.buttonCobrar_Click);
 			// 
 			// buttonAddToOrder
 			// 
@@ -184,6 +186,7 @@ namespace ventas
 			this.buttonAddToOrder.TabIndex = 13;
 			this.buttonAddToOrder.Text = "Agregar a orden";
 			this.buttonAddToOrder.UseVisualStyleBackColor = true;
+			this.buttonAddToOrder.Click += new System.EventHandler(this.buttonAddToOrder_Click);
 			// 
 			// buttonCerrarCuenta
 			// 
@@ -193,6 +196,7 @@ namespace ventas
 			this.buttonCerrarCuenta.TabIndex = 14;
 			this.buttonCerrarCuenta.Text = "Cerrar cuenta";
 			this.buttonCerrarCuenta.UseVisualStyleBackColor = true;
+			this.buttonCerrarCuenta.Click += new System.EventHandler(this.buttonCerrarCuenta_Click);
 			// 
 			// label6
 			// 
