@@ -31,25 +31,30 @@ namespace ventas
 				
 				textBoxPrecioUnit.Text = Convert.ToString(vb.productoSeleccionado.PRECIO_V);
 				
-				
-				
-				
+			}else{
+				MessageBox.Show("No se pudo carfar el producto!");
 			}
 			
 		}
 		void buttonAddToOrder_Click(object sender, EventArgs e)
 		{
+			if(Convert.ToInt32(textBoxCantidadProduct.Text)<=0){
+				MessageBox.Show("El producto seleccionado no está disponible en existencia!","Aviso",MessageBoxButtons.OK,
+				                MessageBoxIcon.Exclamation);
+			}else{
+				if(string.IsNullOrEmpty(comboBox1.Text)){
+					MessageBox.Show("Debe introducir la cantidad del producto!","Aviso",MessageBoxButtons.OK,
+					                MessageBoxIcon.Exclamation);
+				}else{
+					listProductos.Items.Add(vb.productoSeleccionado.NOMBRE);
+					cantidad=Convert.ToInt32(comboBox1.Text);
+				}
+			}
 			
 			
-			listProductos.Items.Add(vb.productoSeleccionado.NOMBRE);
 			
-			cantidad=Convert.ToInt32(comboBox1.Text);
 			
 			total = total + (Convert.ToSingle(textBoxPrecioUnit.Text)*cantidad);
-			
-			
-				
-				
 			
 			textBoxTotalVenta.Text = Convert.ToString(total);
 		}
@@ -57,6 +62,8 @@ namespace ventas
 		{
 			MainForm mf = new MainForm();
 			this.Hide();
+			
+			mf.Show();
 		}
 		void buttonCobrar_Click(object sender, EventArgs e)
 		{

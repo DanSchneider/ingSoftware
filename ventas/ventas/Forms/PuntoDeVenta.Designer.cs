@@ -118,6 +118,7 @@ namespace ventas
 			// 
 			this.textBoxTotalVenta.Location = new System.Drawing.Point(714, 231);
 			this.textBoxTotalVenta.Name = "textBoxTotalVenta";
+			this.textBoxTotalVenta.ReadOnly = true;
 			this.textBoxTotalVenta.Size = new System.Drawing.Size(100, 20);
 			this.textBoxTotalVenta.TabIndex = 5;
 			// 
@@ -125,6 +126,7 @@ namespace ventas
 			// 
 			this.textBoxCantidadProduct.Location = new System.Drawing.Point(12, 35);
 			this.textBoxCantidadProduct.Name = "textBoxCantidadProduct";
+			this.textBoxCantidadProduct.ReadOnly = true;
 			this.textBoxCantidadProduct.Size = new System.Drawing.Size(88, 20);
 			this.textBoxCantidadProduct.TabIndex = 6;
 			// 
@@ -132,6 +134,7 @@ namespace ventas
 			// 
 			this.textBoxDescribeProducto.Location = new System.Drawing.Point(130, 35);
 			this.textBoxDescribeProducto.Name = "textBoxDescribeProducto";
+			this.textBoxDescribeProducto.ReadOnly = true;
 			this.textBoxDescribeProducto.Size = new System.Drawing.Size(302, 20);
 			this.textBoxDescribeProducto.TabIndex = 7;
 			// 
@@ -139,6 +142,7 @@ namespace ventas
 			// 
 			this.textBoxPrecioUnit.Location = new System.Drawing.Point(455, 35);
 			this.textBoxPrecioUnit.Name = "textBoxPrecioUnit";
+			this.textBoxPrecioUnit.ReadOnly = true;
 			this.textBoxPrecioUnit.Size = new System.Drawing.Size(100, 20);
 			this.textBoxPrecioUnit.TabIndex = 8;
 			// 
