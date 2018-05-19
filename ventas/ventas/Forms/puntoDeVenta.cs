@@ -13,7 +13,7 @@ namespace ventas
 			InitializeComponent();
 			
 		}
-		double total =0;
+		public static double total =0;
 		int cantidad = 0;
 		Forms.BuscarProducto vb = new Forms.BuscarProducto();
 		
@@ -32,7 +32,7 @@ namespace ventas
 				textBoxPrecioUnit.Text = Convert.ToString(vb.productoSeleccionado.PRECIO_V);
 				
 			}else{
-				MessageBox.Show("No se pudo carfar el producto!");
+				MessageBox.Show("No se pudo cargar el producto!");
 			}
 			
 		}
@@ -54,28 +54,25 @@ namespace ventas
 			
 			
 			
-			total = total + (Convert.ToSingle(textBoxPrecioUnit.Text)*cantidad);
+			 total = total + (Convert.ToSingle(textBoxPrecioUnit.Text)*cantidad);
 			
-			textBoxTotalVenta.Text = Convert.ToString(total);
+			textBoxSubTotal.Text = Convert.ToString(total);
+			
 		}
 		void buttonCerrarCuenta_Click(object sender, EventArgs e)
+		{
+			Forms.Cobrar co = new Forms.Cobrar();
+			co.textBox2.Text ="$"+textBoxSubTotal.Text;
+			
+			co.ShowDialog();
+		}
+
+		void button1_Click(object sender, EventArgs e)
 		{
 			MainForm mf = new MainForm();
 			this.Hide();
 			
 			mf.Show();
-		}
-		void buttonCobrar_Click(object sender, EventArgs e)
-		{
-			Productos prProductos = new Productos();
-			Usuarios pUsuarios = new Usuarios();
-			Clases.Ventas v = new Clases.Ventas();
-			
-			
-			
-			
-			
-			
 		}
 
 		

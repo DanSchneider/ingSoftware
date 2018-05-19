@@ -92,3 +92,4 @@ C:\Users\JL\Documents\GitHub\ingSoftware\ventas\ventas\obj\Debug\ventas.buscarPr
 C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.Forms.BuscarUsuarios.resources
 C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.Forms.AgregarProductos.resources
 C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.Forms.BuscarProducto.resources
+C:\Users\Luis\Desktop\ingSoftware\ventas\ventas\obj\Debug\ventas.Forms.Cobrar.resources
